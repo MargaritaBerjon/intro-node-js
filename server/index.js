@@ -1,11 +1,11 @@
 //import express
 const express = require('express');
-
+const routes = require('./routes');
 
 // configuring express
 const app = express();
-app.use('/', (req, res) => {
-  res.send('Hola mundo en NodeJS');
-});
+
+//load routes
+app.use('/', routes());
 
 app.listen(3000);
