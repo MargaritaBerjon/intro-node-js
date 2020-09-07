@@ -15,4 +15,4 @@ app.set('views', path.join(__dirname, './views)'));
 //load routes
 app.use('/', routes());
 
-app.listen(3001);
+app.listen(3000);
