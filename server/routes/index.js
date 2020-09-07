@@ -2,12 +2,12 @@ const express = require('express');
 const router = express.Router();
 
 module.exports = function () {
-  router.use('/', (req, res) => {
-    res.send('Home');
+  router.get('/', (req, res) => {
+    res.render('index');
   });
 
-  router.use('/nosotros', (req, res) => {
-    res.send('Nosotros');
+  router.get('/nosotros', (req, res) => {
+    res.render('nosotros');
   });
 
   return router;
