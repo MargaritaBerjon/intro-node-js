@@ -22,7 +22,6 @@ app.use(express.static('public'));
 const config = configs[app.get('env')];
 
 //create variable for web site
-console.log(app.locals.title);
 app.locals.title = config.siteName;
 
 //show current year
