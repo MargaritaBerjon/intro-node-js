@@ -10,7 +10,10 @@ const app = express();
 app.set('view engine', 'pug');
 
 //add views
-app.set('views', path.join(__dirname, './views)'));
+app.set('views', path.join(__dirname, './views'));
+
+//load the public static folder
+app.use(express.static('public'));
 
 //load routes
 app.use('/', routes());
