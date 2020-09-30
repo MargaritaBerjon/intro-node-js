@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-module.export = new Sequelize('ageciadeviajes', 'root', 'root', {
+module.export = new Sequelize('ageciadeviajessss', 'root', 'root', {
   host: '127.0.0.1',
   port: '8889',
   dialect: 'mysql',
